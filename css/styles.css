@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #f6f6f6;
+  --color-primary: #f5f2f2;
   --color-secondary: #fff;
   --color-accent: #ffc2df;
   --color-heading: #000;
@@ -24,7 +24,6 @@ body {
   font-size: 2.4rem;
   font-weight: 1.5;
   background: var(--color-primary);
-
 }
 
 h1,
@@ -83,7 +82,7 @@ p {
 }
 
 .btn--primary:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(28, 28, 28, 0.9);
 }
 
 .btn--secondary {
@@ -110,16 +109,18 @@ p {
 /*Link*/
 a {
   text-decoration: none;
+  color: var(--color-black);
+}
+a:active,
+:hover {
+  color: rgba(42, 42, 42, 0.9);
 }
 
 /*Navbar*/
 
 .nav {
-    display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+
   padding: 0 1rem;
-  align-items: center;
 }
 
 .nav__list {
@@ -129,27 +130,50 @@ a {
   width: 100%;
 }
 
-.nav__item{
-    font-weight: 500;
-    font-size: 2rem;
-    padding: 1.5rem ;
+.nav__item {
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 1.5rem;
 }
 
+.nav__item .btn{
+  display: none;
+}
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
+  .nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:nowrap ;
+    align-items: center;
 
-   .nav{
-    justify-content: start;
    }
-    .nav__list{
+  .nav__list {
     width: auto;
     display: flex;
     font-size: 1.6rem;
-    padding-left: 4rem;
+  }
+  
+  .nav__left,
+ 
+  .nav__item {
+    padding: 0 1.5rem;
+  }
+  .nav__right {
+    flex:0 0 auto;
+    display: flex;
+  }
+  .nav__right {
+    flex:0 0 35%;
+    justify-content: flex-end;
+  }
+  .nav__center {
+    flex:0 0 45%;
+    display: flex;
+  }
 
-    }
-    .nav__item{
-        padding: 0 1.5rem;
-    }
+
+  .nav__item .btn{
+    display: inline;
+  }
 }
-
