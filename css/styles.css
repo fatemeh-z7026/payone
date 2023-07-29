@@ -6,6 +6,11 @@
   --color-black: #000;
   --color-white: #fff;
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
 /*Typography*/
 
@@ -35,7 +40,7 @@ h3 {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 
 h2 {
@@ -56,7 +61,7 @@ p {
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 6.5rem;
   }
   h2 {
     font-size: 4rem;
@@ -191,4 +196,35 @@ a:hover {
   .grid--cols-3 {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/*Hero*/
+.hero__tagline{
+  font-weight: 400;
+  max-width: 500px;
+  line-height: 2;
+}
+
+.hero__tagline::before {
+  content: open-quote;
+}
+.hero__tagline::after {
+  content: close-quote;
+}
+
+.hero__btns{
+  margin-top: 6rem;
+}
+
+.hero__img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 3rem;
+}
+
+/*Container*/
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
