@@ -117,12 +117,9 @@ a:hover {
   color: rgba(42, 42, 42, 0.9);
 }
 
-
-
 /*Navbar*/
 
 .nav {
-
   padding: 0 1rem;
 }
 
@@ -139,44 +136,59 @@ a:hover {
   padding: 1.5rem;
 }
 
-.nav__item .btn{
+.nav__item .btn {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .nav{
+  .nav {
     display: flex;
     justify-content: space-around;
-    flex-wrap:nowrap ;
+    flex-wrap: nowrap;
     align-items: center;
-
-   }
+  }
   .nav__list {
     width: auto;
     display: flex;
     font-size: 1.6rem;
   }
-  
+
   .nav__left,
- 
   .nav__item {
     padding: 0 1.5rem;
   }
   .nav__right {
-    flex:0 0 auto;
+    flex: 0 0 auto;
     display: flex;
   }
   .nav__right {
-    flex:0 0 35%;
+    flex: 0 0 35%;
     justify-content: flex-end;
   }
   .nav__center {
-    flex:0 0 45%;
+    flex: 0 0 45%;
     display: flex;
   }
 
-
-  .nav__item .btn{
+  .nav__item .btn {
     display: inline;
+  }
+}
+
+/*Grid*/
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--cols-3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
