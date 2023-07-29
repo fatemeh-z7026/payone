@@ -83,6 +83,7 @@ p {
 
 .btn--primary:hover {
   background: rgba(28, 28, 28, 0.9);
+  color: var(--color-white);
 }
 
 .btn--secondary {
@@ -112,9 +113,11 @@ a {
   color: var(--color-black);
 }
 a:active,
-:hover {
+a:hover {
   color: rgba(42, 42, 42, 0.9);
 }
+
+
 
 /*Navbar*/
 
