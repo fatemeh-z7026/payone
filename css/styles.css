@@ -299,3 +299,45 @@ a:hover {
   letter-spacing: 1.5;
 }
 
+/*Cards*/
+.card {
+  max-width: 25%;
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card__header{
+  padding: 4rem 2rem 0rem 2rem;
+  font-weight: 600;
+}
+.card__body {
+font-weight: 300;
+padding: 2rem;}
+
+.card__icon__container{
+  /* background: linear-gradient(to bottom, #dcdada, #ffffff);  */
+  background: var(--color-white);
+   margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__icon{
+font-size: 3rem;
+}
+
+.card:hover{
+  background: var(--color-white);
+}
+
+
+.card:hover .card__icon__container{
+  background: linear-gradient(to bottom, #dcdada, #ffffff)
+}
+
