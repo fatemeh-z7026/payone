@@ -16,7 +16,7 @@
 
 ::selection {
   background: var(--color-primary);
-  color: #fff;
+  color: #858383;
 }
 
 html {
@@ -277,5 +277,25 @@ a:hover {
   font-size: 1rem;
   color: #a09e9e;
   font-weight: 300;
+}
+
+/*Partners*/
+.partners{
+  text-align: center;
+}
+
+.partner__logoes{
+  display: flex;
+  justify-content: space-between;
+}
+.partner__img{
+  width: 150px;
+  height: 150px;
+  fill: #706d6e !important;
+}
+.partner__heading{
+  margin-bottom: 0;
+  color: #706d6e;
+  letter-spacing: 1.5;
 }
 
