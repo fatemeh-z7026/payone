@@ -222,9 +222,60 @@ a:hover {
   border-radius: 20px;
   margin-top: 3rem;
 }
+.hero__users{
+  margin-top: 6rem;
+}
 
 /*Container*/
 .container {
   max-width: 1140px;
   margin: 0 auto;
 }
+/*Beta Users*/
+.beta-user-img{
+  display: flex;
+  position: relative;
+}
+.user{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  position: absolute;
+  border: 1px solid var(--color-black);
+  transition: transform 0.5s;
+}
+
+#user1{
+ left:0
+}
+#user2{
+  left: 25px;
+}
+#user3{
+  left: 50px;
+}
+#user4{
+  left: 75px;
+}
+#user5{
+  left:100px
+}
+
+.user:hover{
+  transform: translateY(-10px);
+}
+.user__content {
+  position: absolute;
+  left: 150px;
+}
+
+.user__num {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.user__sub{
+  font-size: 1rem;
+  color: #a09e9e;
+  font-weight: 300;
+}
+
