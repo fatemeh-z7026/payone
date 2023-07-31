@@ -221,6 +221,7 @@ a:hover {
   height: auto;
   border-radius: 20px;
   margin-top: 3rem;
+  display: none;
 }
 .hero__users {
   margin-top: 6rem;
@@ -235,6 +236,7 @@ a:hover {
 .beta-user-img {
   display: flex;
   position: relative;
+  margin-top: 4rem;
 }
 .user {
   width: 35px;
@@ -278,24 +280,26 @@ a:hover {
   color: #a09e9e;
   font-weight: 300;
 }
-@media screen and (min-width: 801px) {
-  .beta-user-img {
-    margin-top: 4rem;
+ @media screen and (min-width: 768px)and (max-width: 1024px) {
+ 
+  .hero__img{
+    display: block;
   }
-  .btn {
-    display: flex;
-    gap: .5rem;
+  .hero__btns .btn{
+    font-size: 2rem;
+    padding: 1.2re 2rem;
   }
   
 }
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px) {
+ 
   .hero__img{
-    display: none;
+    display: block;
   }
-  .beta-user-img {
-    margin-top: 4rem;
-  }
+
+  
 }
+
 
 /*Partners*/
 .partners {
