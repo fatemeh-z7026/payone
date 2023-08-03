@@ -280,26 +280,20 @@ a:hover {
   color: #a09e9e;
   font-weight: 300;
 }
- @media screen and (min-width: 768px)and (max-width: 1024px) {
- 
-  .hero__img{
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero__img {
     display: block;
   }
-  .hero__btns .btn{
+  .hero__btns .btn {
     font-size: 2rem;
     padding: 1.2re 2rem;
   }
-  
 }
 @media screen and (min-width: 768px) {
- 
-  .hero__img{
+  .hero__img {
     display: block;
   }
-
-  
 }
-
 
 /*Partners*/
 .partners {
@@ -366,3 +360,70 @@ a:hover {
 .card:hover .card__icon__container {
   background: linear-gradient(to bottom, #dcdada, #ffffff);
 }
+
+/*Card Credit*/
+.card__credit {
+  max-width: 100%;
+  background: var(--color-white);
+}
+.credit__card__top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2rem;
+}
+
+.credit__card__img {
+  width: 100%;
+  margin-top: 2rem;
+  /* max-width: 300px; */
+}
+
+.credit__card__icon {
+  background-color: #ffffff5f;
+
+  border-radius: 10px;
+  position: absolute;
+  font-size: 14px;
+  padding: 1.2rem;
+  margin-top: 3.5rem;
+}
+
+.pre {
+  left: 1rem;
+}
+.next {
+  right: 1rem;
+}
+@media only screen and (min-width: 769px) {
+  .card__credit {
+    max-width: 45%;
+  }
+  .credit__card__img {
+    width: 70%;
+  }
+
+  .credit__card__icon {
+    padding: 1.25rem  ;
+       background: var(--color-primary);
+  }
+  .pre {
+    left: .5rem;
+  }
+  .next {
+    right: .5rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+   .credit__card__img{
+    width: 70%;
+ }
+
+  .credit__card__icon {
+    padding: 1.75rem;
+    background:var(--color-primary);
+    font-size:2rem;
+  } 
+}
+
