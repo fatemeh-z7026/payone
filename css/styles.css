@@ -535,6 +535,16 @@ a:hover {
 .dollar__card{
   margin-bottom: 2rem;
 }
+.dollar__card__currency,
+.eurr__card__currency{
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.dollar__card__num,
+.eur__card__num{
+  color: var(--color-muted);
+  font-size: 1.5rem;
+}
 
 @media only screen and (min-width: 769px) {
   .card__credit {
