@@ -318,7 +318,7 @@ a:hover {
 
 /*Cards*/
 .card {
-  max-width: 25%;
+  /* max-width: 25%; */
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
@@ -398,41 +398,7 @@ a:hover {
 .next {
   right: 1rem;
 }
-@media only screen and (min-width: 769px) {
-  .card__credit {
-    max-width: 40%;
-  }
-  .credit__card__img {
-    width: 70%;
-    max-height: 200px;
 
-  }
-
-  .credit__card__icon {
-    padding: 1.25rem;
-    background: var(--color-primary);
-  }
-  .pre {
-    left: -1rem;
-  }
-  .next {
-    right: -1rem;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .credit__card__img {
-    width: 70%;
-    max-height: 200px;
-  }
-
-  /*Credit__card__mid*/
-
-  .credit__card__icon {
-    padding: 1.75rem;
-    background: var(--color-primary);
-    font-size: 2rem;
-  }
-}
 
 .credit__card__mid {
   display: flex;
@@ -532,5 +498,81 @@ a:hover {
 }
 .credit__card__list__body :first-child{
   padding-top: 0;
+}
+
+
+
+/*Card-Nested*/
+
+.card--nested{
+  width: 100%;
+  background: var(--color-white);
+  padding: 1rem;
+  text-align: left;
+
+}
+
+.card__nested__top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(123, 123, 123, 0.373);
+  border-radius: 10px;
+  padding: 1rem;
+  background: var(--color-primary);
+}
+
+.card__nested__nav{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.dollar__card,.eur__card{
+  background: var(--color-primary);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.dollar__card{
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 769px) {
+  .card__credit {
+    max-width: 35%;
+  }
+  .credit__card__img {
+    width: 70%;
+    max-height: 200px;
+
+  }
+
+  .credit__card__icon {
+    padding: 1.25rem;
+    background: var(--color-primary);
+  }
+  .pre {
+    left: -1rem;
+  }
+  .next {
+    right: -1rem;
+  }
+ 
+  
+}
+@media only screen and (min-width: 1024px) {
+  .credit__card__img {
+    width: 70%;
+    max-height: 200px;
+  }
+
+  /*Credit__card__mid*/
+
+  .credit__card__icon {
+    /* padding: 1.75rem; */
+    background: var(--color-primary);
+    font-size: 2rem;
+  }
+
+ 
 }
 
