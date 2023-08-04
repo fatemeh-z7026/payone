@@ -113,6 +113,21 @@ p {
   padding-left: 1rem;
 }
 
+.active-btn{
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: rgb(50, 205, 50);
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+
+}
+
+.active-btn:hover{
+  border: 1px solid rgb(50, 205, 50);
+  color: rgb(50, 205, 50);
+
+}
+
 /*Link*/
 a {
   text-decoration: none;
@@ -399,7 +414,6 @@ a:hover {
   right: 1rem;
 }
 
-
 .credit__card__mid {
   display: flex;
   flex-direction: column;
@@ -425,11 +439,10 @@ a:hover {
   font-size: 1.3rem;
 }
 
-
 .mid__btn__title {
   display: flex;
   justify-content: space-evenly;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .mid__btn__title span {
@@ -444,20 +457,20 @@ a:hover {
   padding-top: 2.5rem;
 }
 
-.card__body__credit__list{
+.card__body__credit__list {
   padding-bottom: 0;
 }
 .credit__card__list__body {
   list-style: none;
-  padding:0;
+  padding: 0;
   margin-top: 0;
   text-align: left;
 }
 
-.credit__card__li{
+.credit__card__li {
   border-bottom: 1px solid var(--color-muted);
   padding: 1rem 0;
-  box-shadow: 0px 8px 10px -15px #111;  
+  box-shadow: 0px 8px 10px -15px #111;
 }
 
 .credit__card__list__container {
@@ -484,35 +497,32 @@ a:hover {
   align-items: center;
 }
 
-.list__sub{
+.list__sub {
   padding-left: 4rem;
-  text-align:left;
+  text-align: left;
   top: 0;
   font-size: 1.2rem;
 }
 
-.credit__card__list__body :last-child{
+.credit__card__list__body :last-child {
   border: none;
   box-shadow: none;
   padding-bottom: 0;
 }
-.credit__card__list__body :first-child{
+.credit__card__list__body :first-child {
   padding-top: 0;
 }
 
-
-
 /*Card-Nested*/
 
-.card--nested{
+.card--nested {
   width: 100%;
   background: var(--color-white);
   padding: 1rem;
   text-align: left;
-
 }
 
-.card__nested__top{
+.card__nested__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -522,30 +532,50 @@ a:hover {
   background: var(--color-primary);
 }
 
-.card__nested__nav{
+.card__nested__nav {
   font-size: 1.6rem;
   font-weight: 500;
 }
-.dollar__card,.eur__card{
+.card__nested__body{
+  padding:2rem 0;
+}
+.dollar__card,
+.eur__card {
   background: var(--color-primary);
   padding: 2rem;
   border-radius: 10px;
 }
 
-.dollar__card{
+.dollar__card {
   margin-bottom: 2rem;
 }
 .dollar__card__currency,
-.eurr__card__currency{
+.eur__card__currency {
   font-size: 1.7rem;
   font-weight: 600;
 }
 .dollar__card__num,
-.eur__card__num{
+.eur__card__num,
+.dollar__card__sub,
+.eur__card__sub {
   color: var(--color-muted);
   font-size: 1.5rem;
+  bottom: 0;
 }
 
+.dollar__card__price,
+.eur__card__price {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 3rem;
+
+}
+
+.card__nested__active__btn{
+  float: right;
+
+}
 @media only screen and (min-width: 769px) {
   .card__credit {
     max-width: 35%;
@@ -553,7 +583,6 @@ a:hover {
   .credit__card__img {
     width: 70%;
     max-height: 200px;
-
   }
 
   .credit__card__icon {
@@ -566,8 +595,6 @@ a:hover {
   .next {
     right: -1rem;
   }
- 
-  
 }
 @media only screen and (min-width: 1024px) {
   .credit__card__img {
@@ -582,7 +609,4 @@ a:hover {
     background: var(--color-primary);
     font-size: 2rem;
   }
-
- 
 }
-
