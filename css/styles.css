@@ -5,6 +5,7 @@
   --color-heading: #000;
   --color-black: #000;
   --color-white: #fff;
+  --color-muted: #a09e9e;
 }
 *,
 *::after,
@@ -277,7 +278,7 @@ a:hover {
 }
 .user__sub {
   font-size: 1rem;
-  color: #a09e9e;
+  color: var(--color-muted);
   font-weight: 300;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -365,6 +366,7 @@ a:hover {
 .card__credit {
   max-width: 100%;
   background: var(--color-white);
+  border-radius: 30px;
 }
 .credit__card__top {
   position: relative;
@@ -377,11 +379,11 @@ a:hover {
 .credit__card__img {
   width: 100%;
   margin-top: 2rem;
-  /* max-width: 300px; */
 }
 
 .credit__card__icon {
   background-color: #ffffff5f;
+  border: 1px solid rgba(123, 123, 123, 0.373);
 
   border-radius: 10px;
   position: absolute;
@@ -398,32 +400,137 @@ a:hover {
 }
 @media only screen and (min-width: 769px) {
   .card__credit {
-    max-width: 45%;
+    max-width: 40%;
   }
   .credit__card__img {
     width: 70%;
+    max-height: 200px;
+
   }
 
   .credit__card__icon {
-    padding: 1.25rem  ;
-       background: var(--color-primary);
+    padding: 1.25rem;
+    background: var(--color-primary);
   }
   .pre {
-    left: .5rem;
+    left: -1rem;
   }
   .next {
-    right: .5rem;
+    right: -1rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-   .credit__card__img{
+  .credit__card__img {
     width: 70%;
- }
+    max-height: 200px;
+  }
+
+  /*Credit__card__mid*/
 
   .credit__card__icon {
     padding: 1.75rem;
-    background:var(--color-primary);
-    font-size:2rem;
-  } 
+    background: var(--color-primary);
+    font-size: 2rem;
+  }
+}
+
+.credit__card__mid {
+  display: flex;
+  flex-direction: column;
+}
+
+.credit__card__mid__btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* height: 70px; */
+  padding-top: 1rem;
+}
+
+.mid__btn {
+  border: 1px solid rgba(123, 123, 123, 0.373);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+
+.mid__btn__title {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: .5rem;
+}
+
+.mid__btn__title span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.credit__card__header {
+  text-align: left;
+  color: var(--color-muted);
+  font-size: 1.5rem;
+  padding-top: 2.5rem;
+}
+
+.card__body__credit__list{
+  padding-bottom: 0;
+}
+.credit__card__list__body {
+  list-style: none;
+  padding:0;
+  margin-top: 0;
+  text-align: left;
+}
+
+.credit__card__li{
+  border-bottom: 1px solid var(--color-muted);
+  padding: 1rem 0;
+  box-shadow: 0px 8px 10px -15px #111;  
+}
+
+.credit__card__list__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+}
+
+.list__img {
+  width: 30px;
+  border-radius: 100%;
+}
+
+.list__heading,
+.list__price {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.list__right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.list__sub{
+  padding-left: 4rem;
+  text-align:left;
+  top: 0;
+  font-size: 1.2rem;
+}
+
+.credit__card__list__body :last-child{
+  border: none;
+  box-shadow: none;
+  padding-bottom: 0;
+}
+.credit__card__list__body :first-child{
+  padding-top: 0;
 }
 

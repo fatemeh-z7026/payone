@@ -12,34 +12,87 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.css">
-    <link rel="stylesheet" href="/assets/fontawesome/css/solid.css">
+    <link rel="stylesheet" href="/assets/fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="/assets/fontawesome/css/solid.css" />
   </head>
   <body>
     <div id="a" class="card card__credit">
-    <div class="credit__card__top">
+      <div class="credit__card__top">
+        <img
+          src="/assets/images/credit-card-svgrepo-com.png"
+          alt=""
+          class="credit__card__img"
+        />
+        <a class="credit__card__icon pre" href="">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <a class="credit__card__icon next" href="">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="credit__card__mid">
+        <div class="credit__card__mid__btn">
+          <a class="mid__btn" href="">
+            <i class="fa-solid fa-info"></i>
+          </a>
+          <a class="mid__btn" href="">
+            <i class="fa-solid fa-receipt"></i>
+          </a>
+          <a class="mid__btn" href="">
+            <i class="fa-solid fa-download"></i>
+          </a>
+          <a class="mid__btn" href="">
+            <i class="fa-solid fa-ban"></i>
+          </a>
+        </div>
+        <div class="mid__btn__title">
+          <span>Card Details</span>
+          <span>Payment</span>
+          <span>Statement</span>
+          <span>Block Card</span>
+        </div>
+      </div>
 
-      <img  src="/assets/images/credit-card-svgrepo-com.png" alt="" class="credit__card__img">
-      <a class="credit__card__icon pre" href="">      <i class="fa-solid fa-arrow-left "></i>
-      </a>
-      <a class="credit__card__icon next" href="">
-        <i class="fa-solid fa-arrow-right "></i>
-  
-      </a>
-    </div>
-  
-    <a href="#" class="btn btn--primary">Get Started</a>
-          <header class="card__header">Checking Account</header>
-      <div class="card__body">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas optio
-        obcaecati est dolores? Assumenda doloribus deleniti
+      <header class="card__header credit__card__header">
+        Latest Transactions
+      </header>
+      <div class="card__body card__body__credit__list">
+        <ul class="credit__card__list__body">
+          <li class="credit__card__li" >
+            <div class="credit__card__list__container">
+              <div class="list__right">
+                <img class="list__img" src="assets/images/users (8).jpg" alt="">
+                <span class="list__heading" >Online Purchase At Ebay.com</span>
+              </div>
+              <span class="list__price">$25000</span>
+            </div>
+            <sub class="list__sub">28 Aguest 3:00pm</sub>
+          </li>
+          <li class="credit__card__li" >
+            <div class="credit__card__list__container">
+              <div class="list__right">
+                <img class="list__img" src="assets/images/users (7).jpg" alt="">
+                <span class="list__heading" >ATM Cash Withdrawal</span>
+              </div>
+              <span class="list__price">$925300</span>
+            </div>
+            <sub class="list__sub">28 Aguest 3:00pm</sub>
+          </li>
+          <li class="credit__card__li" >
+            <div class="credit__card__list__container">
+              <div class="list__right">
+                <img class="list__img" src="assets/images/users (6).jpg" alt="">
+                <span class="list__heading" >Online Purchase on Amazon.com</span>
+              </div>
+              <span class="list__price">$115000</span>
+            </div>
+            <sub class="list__sub">10 april 13:00pm</sub>
+          </li>
+          
+        </ul>
       </div>
     </div>
 
-
-
-    
-    
     <script src="index.js"></script>
   </body>
 </html>
