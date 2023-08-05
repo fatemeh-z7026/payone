@@ -11,7 +11,7 @@
   </div>
 
   <!--card-service-->
-  <div id="a" class="card">
+  <div id="a" class="card card__service">
     <div id="b" class="card__icon__container">    <i class="fa-solid fa-money-bills card__icon"></i>
     </div>
     <header class="card__header">Checking Account</header>
@@ -96,5 +96,50 @@
         </li>
         
       </ul>
+    </div>
+  </div>
+
+  <!--Card-Nested-->
+  <div class="card card--nested">
+    <div class="card__nested__top">
+      <a class="card__nested__item" href="#">Payment Account</a>
+      <a class="card__nested__item" href="#">Cards</a>
+      <a class="card__nested__item" href="#">Open Depopsits</a>
+      <a class="card__nested__item" href="#"
+        ><i class="fa-solid fa-ellipsis"></i
+      ></a>
+    </div>
+    <div class="card__body card__nested__body">
+      <div class="dollar__card">
+        <span class="dollar__card__currency">USD</span>
+        <p class="dollar__card__num">3210********7890</p>
+        <p class="dollar__card__price">$88.2000</p>
+        <sub class="dollar__card__sub"> Blocked amount $120000 </sub>
+      </div>
+      <div class="eur__card">
+        <span class="eur__card__currency">EUR</span>
+        <p class="eur__card__num">3210********7890</p>
+        <p class="eur__card__price">$88.2000</p>
+        <sub class="eur__card__sub"> Blocked amount $120000</sub>
+        <div class="card__nested__btn"><a class="active-btn card__nested__active__btn " href="#" >Active</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!--Card-Inner-->
+  <div class="card card__inner">
+    <div class="card__body card__inner__body">
+      <div class="card__inner__top" >
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-brands fa-apple"></i>
+      </div>
+      <div class="card__inner__mid">
+        <p class="card__inner__price">$7 534.14</p>
+        <sub class="card__inner__sub">Platinum Plus</sub>
+      </div>
+      <div class="card__footer card__inner__footer">
+        <i class="fa-solid fa-circle"></i>
+        <span>12/24</span>
+      </div>
     </div>
   </div>

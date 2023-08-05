@@ -113,19 +113,17 @@ p {
   padding-left: 1rem;
 }
 
-.active-btn{
+.active-btn {
   font-size: 1.6rem;
   font-weight: 500;
   color: rgb(50, 205, 50);
   padding: 1rem 1.5rem;
   border-radius: 5px;
-
 }
 
-.active-btn:hover{
+.active-btn:hover {
   border: 1px solid rgb(50, 205, 50);
   color: rgb(50, 205, 50);
-
 }
 
 /*Link*/
@@ -334,7 +332,7 @@ a:hover {
 /*Cards*/
 .card {
   /* max-width: 25%; */
-  border-radius: 7px;
+  border-radius: 30px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
   text-align: center;
@@ -369,11 +367,11 @@ a:hover {
   font-size: 3rem;
 }
 
-.card:hover {
+.card__service:hover {
   background: var(--color-white);
 }
 
-.card:hover .card__icon__container {
+.card__service:hover .card__icon__container {
   background: linear-gradient(to bottom, #dcdada, #ffffff);
 }
 
@@ -518,27 +516,29 @@ a:hover {
 .card--nested {
   width: 100%;
   background: var(--color-white);
-  padding: 1rem;
+  padding: 2rem;
   text-align: left;
+  position: relative;
 }
 
 .card__nested__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border: 1px solid rgba(123, 123, 123, 0.373);
   border-radius: 10px;
   padding: 1rem;
   background: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 2rem; */
 }
 
-.card__nested__nav {
-  font-size: 1.6rem;
+.card__nested__item {
+  font-size: 1.2rem;
   font-weight: 500;
+  padding: 1rem 0;
 }
-.card__nested__body{
-  padding:2rem 0;
-}
+.card__nested__body {
+  padding: 0;
+} 
 .dollar__card,
 .eur__card {
   background: var(--color-primary);
@@ -547,7 +547,7 @@ a:hover {
 }
 
 .dollar__card {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 .dollar__card__currency,
 .eur__card__currency {
@@ -557,23 +557,64 @@ a:hover {
 .dollar__card__num,
 .eur__card__num,
 .dollar__card__sub,
-.eur__card__sub {
+.eur__card__sub,
+.card__inner__sub {
   color: var(--color-muted);
   font-size: 1.5rem;
   bottom: 0;
 }
 
 .dollar__card__price,
-.eur__card__price {
+.eur__card__price,
+.card__inner__price {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 0;
   margin-top: 3rem;
-
 }
 
-.card__nested__active__btn{
-  float: right;
+.card__nested__btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*Card-Inner*/
+.card__inner {
+  display: none;
+  background: linear-gradient(
+    130deg,
+    rgba(30, 140, 229, 0.7026126124277836) 17%,
+    rgba(241, 55, 242, 0.747430539598652) 50%,
+    rgba(241, 148, 17, 0.8118563099067753) 100%
+  );
+  position: absolute;
+  width: 100%;
+  max-width: 250px;
+  top: 30%;
+  right: 55%;
+}
+
+.card__inner__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  padding: 1.25rem 0;
+}
+.card__inner__mid {
+  text-align: left;
+  color: var(--color-white);
+}
+.card__inner__sub {
+  color: var(--color-white);
+}
+.card__inner__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  margin-top: 3rem;
+  padding: 1.25rem 0;
 
 }
 @media only screen and (min-width: 769px) {
@@ -595,6 +636,17 @@ a:hover {
   .next {
     right: -1rem;
   }
+
+  .card--nested {
+    width:100%;
+    max-width: 400px;
+  }
+  .card__nested__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 @media only screen and (min-width: 1024px) {
   .credit__card__img {
@@ -602,11 +654,20 @@ a:hover {
     max-height: 200px;
   }
 
-  /*Credit__card__mid*/
 
   .credit__card__icon {
-    /* padding: 1.75rem; */
     background: var(--color-primary);
     font-size: 2rem;
   }
+  .card__nested__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+  .card__inner {
+    display: block;}
+    .card--nested {
+      width:100%;
+      max-width: 420px;
+    }
 }
