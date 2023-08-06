@@ -617,6 +617,56 @@ a:hover {
   padding: 1.25rem 0;
 
 }
+
+
+/*Card-Crm*/
+
+.card--crm{
+  background: var(--color-white);
+  width: 100%;
+  padding: 2rem;
+}
+.card__crm__icon{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 5rem;
+  padding: 2rem;
+}
+.card__body__crm{
+  text-align: left;
+}
+
+.card__crm__footer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem;
+}
+.crm__img{
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+}
+
+.footer__right{
+  text-align: left;
+  padding: 1.5rem;
+}
+.crm__heading,
+.crm__job__title{
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0;
+}
+.footer__icon{
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
 @media only screen and (min-width: 769px) {
   .card__credit {
     max-width: 35%;
