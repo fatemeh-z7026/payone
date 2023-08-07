@@ -37,7 +37,7 @@ h2,
 h3 {
   color: var(--color-heading);
   text-transform: capitalize;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -103,6 +103,11 @@ p {
 
 .btn--small {
   padding: 1rem 1.5rem;
+}
+
+.btn--arrow{
+  border: 1px solid var(--color-black);
+  display: inline-block;
 }
 
 .btn--arrow::after {
@@ -721,3 +726,19 @@ a:hover {
       max-width: 420px;
     }
 }
+
+/*Feature-Content*/
+.feature__content{
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+}
+.feature__body{
+ margin-bottom: 8rem;
+}
+ @media screen and (min-width:769px) {
+  .feature__content{
+    width: 40%;
+  
+  }
+ }
