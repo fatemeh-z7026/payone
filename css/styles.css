@@ -38,6 +38,7 @@ h3 {
   color: var(--color-heading);
   text-transform: capitalize;
   margin-bottom: 2rem;
+  margin-top: 0;
 }
 
 h1 {
@@ -80,6 +81,7 @@ p {
   padding: 1.5rem 2.2rem;
   font-weight: 400;
   cursor: pointer;
+  display: inline-block;
 }
 
 .btn--primary {
@@ -741,4 +743,16 @@ a:hover {
     width: 40%;
   
   }
+ }
+
+
+ /*Callout*/
+
+ .callout__container{
+  background: var(--color-accent);
+  text-align: center;
+  max-width: 1150px;
+  margin:0 auto ;
+  padding: 4rem;
+  border-radius: 30px;
  }
