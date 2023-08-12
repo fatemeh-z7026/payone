@@ -587,7 +587,7 @@ a:hover {
 
 /*Card-Inner*/
 .card__inner {
-  display: none;
+  /* display: none; */
   background: linear-gradient(
     130deg,
     rgba(30, 140, 229, 0.7026126124277836) 17%,
@@ -598,7 +598,7 @@ a:hover {
   width: 100%;
   max-width: 250px;
   top: 30%;
-  right: 55%;
+  left: 55%;
 }
 
 .card__inner__top {
@@ -672,7 +672,7 @@ a:hover {
   padding-top: 1rem;
   font-size: 1.5rem;
 }
-@media only screen and (min-width: 769px) {
+/* @media only screen and (min-width: 769px) {
   .card__credit {
     max-width: 35%;
   }
@@ -725,7 +725,7 @@ a:hover {
     width: 100%;
     max-width: 420px;
   }
-}
+} */
 
 /*Feature-Content*/
 .feature__content {
@@ -736,11 +736,11 @@ a:hover {
 .feature__body {
   margin-bottom: 8rem;
 }
-@media screen and (min-width: 769px) {
+/* @media screen and (min-width: 769px) {
   .feature__content {
     width: 40%;
   }
-}
+} */
 
 /*Callout*/
 
