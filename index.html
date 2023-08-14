@@ -37,14 +37,14 @@
   <div class="nav__right">
     <ul class=" nav__list">
        
-      <li class="nav__item"><a href="#">Login</a></li>
+      <li class="nav__item"><a class="btn" href="#">Login</a></li>
       <li class="nav__item"> <a href="#" class="btn btn--secondary btn--small">Get Started</a></li>
       </ul>
   </div>
 </nav>
 </header>
 
-<section>
+<section class="block container">
   <div class="container grid grid--cols-2">
     <header>
       <h1>The Modern Finance Solution With PayOne</h1>
@@ -74,7 +74,7 @@
   </div>
 </section>
 
-<section>
+<section class="block container">
   <div class="container partners">
     <h6 class="partner__heading">Some Of Our Trusted Partners/Affiliates</h6>
     <div class="partner__logoes">
@@ -89,10 +89,10 @@
 </section>
 
    
-<section>
+<section class="block container">
   <div class="grid grid--cols-3">
-    <div id="a" class="card card__service">
-      <div id="b" class="card__icon__container">    <i class="fa-solid fa-money-bills card__icon"></i>
+    <div  class="card card__service">
+      <div  class="card__icon__container">    <i class="fa-solid fa-money-bills card__icon"></i>
       </div>
       <header class="card__header">Checking Account</header>
       <div class="card__body">
@@ -120,8 +120,20 @@
     </div>
   </div>
 </section>
-<article class="grid grid--cols-2">
-  <div id="a" class="card card__credit">
+<article class="grid grid--cols-2 block feature container">
+  <div class="feature__content">
+    <h2 class="feature__heading">All your finance module in one app</h2>
+    <p class="feature__body">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim illo rem
+      deserunt corporis error suscipit dignissimos sequi dolorum. Fugiat,
+      libero!lorem30
+      
+
+    </p>
+    <a href="#" class="btn btn--arrow">Get Started</a>
+
+  </div>
+  <div  class="card card--credit">
     <div class="credit__card__top">
       <img
         src="/assets/images/credit-card-svgrepo-com.png"
@@ -197,19 +209,10 @@
       </ul>
     </div>
   </div>
-  <div class="feature__content">
-    <h2 class="feature__heading">All your finance module in one app</h2>
-    <p class="feature__body">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim illo rem
-      deserunt corporis error suscipit dignissimos sequi dolorum. Fugiat,
-      libero!
-    </p>
-    <a href="#" class="btn btn--arrow">Get Started</a>
 
-  </div>
 </article>
 
-<article class="grid grid--cols-2">
+<article class="grid grid--cols-2 block card__nested__block feature container">
   <div class="feature__content">
     <h2 class="feature__heading">All your finance module in one app</h2>
     <p class="feature__body">
@@ -264,7 +267,8 @@
   
 </article>
 
-<article class="grid grid--cols-3">
+
+<article class="grid grid--cols-3 block container">
   <div class="card card--crm">
     <div class="card__crm__icon">
       <i class="fa-solid fa-quote-left"></i>
@@ -347,7 +351,7 @@
     </div>
   </div>
 </article>
-<div class="callout__container">
+<div class="callout__container block container">
   <h2>Open your aacount today and enjoy!</h2>
   <h6>Lorem ipsum dolor sit, amet consectetur adipisicing.</h6>
   <div>
@@ -357,7 +361,7 @@
 
   </div>
  </div>
- <footer>
+ <footer class="block">
   <div class=" grid footer__section">
     <div class="footer__section">
       <div class="footer__header">Contact</div>

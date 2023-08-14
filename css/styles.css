@@ -42,7 +42,7 @@ h3 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -63,7 +63,7 @@ p {
   }
 
   h1 {
-    font-size: 6.5rem;
+    font-size: 5.5rem;
   }
   h2 {
     font-size: 4rem;
@@ -72,6 +72,15 @@ p {
   h3 {
     font-size: 2.4rem;
   }
+}
+.block {
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 /*Buttons*/
@@ -205,6 +214,7 @@ a:hover {
 
 .grid {
   display: grid;
+  gap: 8rem 4rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -224,6 +234,7 @@ a:hover {
   font-weight: 400;
   max-width: 500px;
   line-height: 2;
+  margin-bottom: 0;
 }
 
 .hero__tagline::before {
@@ -234,25 +245,19 @@ a:hover {
 }
 
 .hero__btns {
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .hero__img {
   max-width: 100%;
   height: auto;
   border-radius: 20px;
-  margin-top: 3rem;
   display: none;
 }
 .hero__users {
   margin-top: 6rem;
 }
 
-/*Container*/
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
 /*Beta Users*/
 .beta-user-img {
   display: flex;
@@ -322,40 +327,53 @@ a:hover {
 }
 
 .partner__logoes {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
+
 .partner__img {
-  width: 150px;
-  height: 150px;
+  width: 110px;
+  height: 110px;
   fill: #706d6e !important;
+  margin: 0 auto;
 }
 .partner__heading {
-  margin-bottom: 0;
+  margin: 0 auto;
   color: #706d6e;
   letter-spacing: 1.5;
+}
+@media screen and (min-width: 768px) {
+  .partner__logoes {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
 }
 
 /*Cards*/
 .card {
-  /* max-width: 25%; */
+  max-width: 430px;
+  margin: 0 auto;
   border-radius: 30px;
-  box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
   text-align: center;
   cursor: pointer;
+  height: fit-content;
 }
 
 .card__header {
-  padding: 4rem 2rem 0rem 2rem;
+  padding: 2rem 3rem;
   font-weight: 600;
 }
 .card__body {
   font-weight: 300;
-  padding: 2rem;
+  padding: 2rem 3rem;
   line-height: 1.5;
 }
 
+/*Card-Service*/
+
+.card__service {
+  padding: 4rem 0;
+}
 .card__icon__container {
   background: linear-gradient(
     0deg,
@@ -375,7 +393,11 @@ a:hover {
 }
 
 .card__service:hover {
-  background: var(--color-white);
+  background: linear-gradient(
+    0deg,
+    rgba(245, 242, 242, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 .card__service:hover .card__icon__container {
@@ -383,8 +405,8 @@ a:hover {
 }
 
 /*Card Credit*/
-.card__credit {
-  max-width: 100%;
+.card--credit {
+  width: 100%;
   background: var(--color-white);
   border-radius: 30px;
 }
@@ -398,12 +420,13 @@ a:hover {
 
 .credit__card__img {
   width: 100%;
+  max-width: 300px;
   margin-top: 2rem;
 }
 
 .credit__card__icon {
-  background-color: #ffffff5f;
   border: 1px solid rgba(123, 123, 123, 0.373);
+  background: var(--color-primary);
 
   border-radius: 10px;
   position: absolute;
@@ -413,10 +436,10 @@ a:hover {
 }
 
 .pre {
-  left: 1rem;
+  left: -1rem;
 }
 .next {
-  right: 1rem;
+  right: -1rem;
 }
 
 .credit__card__mid {
@@ -428,14 +451,13 @@ a:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* height: 70px; */
   padding-top: 1rem;
 }
 
 .mid__btn {
   border: 1px solid rgba(123, 123, 123, 0.373);
-  padding: 2rem;
-  border-radius: 10px;
+  padding: 1.5rem;
+  border-radius: 5px;
   width: 30px;
   height: 30px;
   display: flex;
@@ -459,7 +481,7 @@ a:hover {
   text-align: left;
   color: var(--color-muted);
   font-size: 1.5rem;
-  padding-top: 2.5rem;
+  padding-bottom: 0;
 }
 
 .card__body__credit__list {
@@ -519,13 +541,15 @@ a:hover {
 }
 
 /*Card-Nested*/
+.card__nested__block {
+  position: relative;
+}
 
 .card--nested {
   width: 100%;
   background: var(--color-white);
   padding: 2rem;
   text-align: left;
-  position: relative;
 }
 
 .card__nested__top {
@@ -549,7 +573,7 @@ a:hover {
 .dollar__card,
 .eur__card {
   background: var(--color-primary);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 10px;
 }
 
@@ -577,7 +601,7 @@ a:hover {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 0;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .card__nested__btn {
@@ -587,7 +611,7 @@ a:hover {
 
 /*Card-Inner*/
 .card__inner {
-  /* display: none; */
+  display: none;
   background: linear-gradient(
     130deg,
     rgba(30, 140, 229, 0.7026126124277836) 17%,
@@ -598,7 +622,7 @@ a:hover {
   width: 100%;
   max-width: 250px;
   top: 30%;
-  left: 55%;
+  left: 78%;
 }
 
 .card__inner__top {
@@ -631,6 +655,10 @@ a:hover {
   width: 100%;
   padding: 2rem;
 }
+
+.card__body__crm {
+  padding: 0 2rem;
+}
 .card__crm__icon {
   width: 100px;
   height: 100px;
@@ -639,7 +667,7 @@ a:hover {
   justify-content: flex-start;
   align-items: center;
   font-size: 5rem;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 .card__body__crm {
   text-align: left;
@@ -649,7 +677,7 @@ a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 .crm__img {
   width: 64px;
@@ -672,29 +700,18 @@ a:hover {
   padding-top: 1rem;
   font-size: 1.5rem;
 }
-/* @media only screen and (min-width: 769px) {
-  .card__credit {
-    max-width: 35%;
+@media screen and (min-width: 769px) {
+  .grid--cols-2 {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .credit__card__img {
-    width: 70%;
-    max-height: 200px;
-  }
-
   .credit__card__icon {
     padding: 1.25rem;
-    background: var(--color-primary);
   }
   .pre {
     left: -1rem;
   }
   .next {
     right: -1rem;
-  }
-
-  .card--nested {
-    width: 100%;
-    max-width: 400px;
   }
   .card__nested__top {
     display: flex;
@@ -704,50 +721,34 @@ a:hover {
   }
 }
 @media only screen and (min-width: 1024px) {
-  .credit__card__img {
-    width: 70%;
-    max-height: 200px;
-  }
-
-  .credit__card__icon {
-    background: var(--color-primary);
-    font-size: 2rem;
-  }
-  .card__nested__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   .card__inner {
     display: block;
   }
-  .card--nested {
-    width: 100%;
-    max-width: 420px;
-  }
-} */
+}
 
 /*Feature-Content*/
 .feature__content {
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   padding: 2rem;
+  margin: 0 auto;
 }
 .feature__body {
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  line-height: 1.8;
 }
-/* @media screen and (min-width: 769px) {
-  .feature__content {
-    width: 40%;
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(odd) .feature__content {
+    order: 2;
   }
-} */
+}
 
 /*Callout*/
 
 .callout__container {
   background: var(--color-accent);
   text-align: center;
-  max-width: 1150px;
   margin: 0 auto;
   padding: 4rem;
   border-radius: 30px;
@@ -755,43 +756,41 @@ a:hover {
 
 /*Footer*/
 
-ul{
+ul {
   list-style: none;
   padding-left: 0;
 }
 
-.footer__content a{
+.footer__content a {
   line-height: 1.8;
   font-weight: 300;
   color: var(--color-muted);
 }
 
-.footer__section{
+.footer__section {
   padding: 2rem;
   border-bottom: 1px solid #393939;
 }
 
-.footer__header{
+.footer__header {
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.footer__brand{
+.footer__brand {
   margin-top: 5rem;
   text-align: center;
-} 
+}
 
-.footer__brand img{
+.footer__brand img {
   width: 100%;
   max-width: 230px;
 }
 
-
-.footer__sub{
+.footer__sub {
   color: var(--color-muted);
   font-size: 1.5rem;
   font-weight: 400;
-
 }
 
 .footer__section {
@@ -801,27 +800,27 @@ ul{
 
 @media screen and (min-width: 768px) {
   .footer__section {
-grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
-border: none;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    border: none;
   }
- .footer .collapsible__chevron{
+  .footer .collapsible__chevron {
     display: none;
   }
-  .footer .collapsible__content{
+  .footer .collapsible__content {
     max-height: 100%;
     opacity: 1;
   }
 
-  .footer__brand{
+  .footer__brand {
     order: -1;
     margin-top: 1rem;
   }
 
-  .footer__{
+  .footer__ {
     font-size: 1.5rem;
   }
 
-  .footer__heading{
+  .footer__heading {
     font-size: 1.6rem;
   }
 }
