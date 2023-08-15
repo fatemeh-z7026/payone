@@ -164,11 +164,13 @@ a:hover {
   padding-left: 0;
   width: 100%;
 }
-
+.nav__center .nav__item {
+  padding:  1.5rem;
+}
 .nav__item {
   font-weight: 500;
   font-size: 2rem;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
 }
 
 .nav__item .btn {
@@ -178,7 +180,7 @@ a:hover {
 @media screen and (min-width: 768px) {
   .nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
   }
@@ -188,15 +190,13 @@ a:hover {
     font-size: 1.6rem;
   }
 
-  .nav__left,
-  .nav__item {
-    padding: 0 1.5rem;
+  .nav__center .nav__item {
+    padding: 0 1.2rem;
   }
+ 
   .nav__right {
-    flex: 0 0 auto;
     display: flex;
-  }
-  .nav__right {
+
     flex: 0 0 35%;
     justify-content: flex-end;
   }
@@ -655,7 +655,7 @@ a:hover {
   background: var(--color-white);
   width: 100%;
   padding: 2rem;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 .card--crm:hover {
