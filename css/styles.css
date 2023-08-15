@@ -541,7 +541,8 @@ a:hover {
 }
 
 /*Card-Nested*/
-.card__nested__block {
+
+.nested__container {
   position: relative;
 }
 
@@ -621,8 +622,8 @@ a:hover {
   position: absolute;
   width: 100%;
   max-width: 250px;
-  top: 30%;
-  left: 78%;
+  top: 28%;
+  left: 55%;
 }
 
 .card__inner__top {
@@ -654,6 +655,11 @@ a:hover {
   background: var(--color-white);
   width: 100%;
   padding: 2rem;
+  transition: transform .5s;
+}
+
+.card--crm:hover {
+  transform: scale(1.1);
 }
 
 .card__body__crm {
