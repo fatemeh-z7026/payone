@@ -880,7 +880,7 @@ ul {
 }
 
 /* Modal Content */
-.modal-content {
+.modalContent {
   width: 100%;
   max-width: 400px;
   background-color: #fefefe;
@@ -912,7 +912,7 @@ ul {
   /* height: 100vh; */
 }
 
-.card-login {
+.cardLogin, .cardRegister {
   width: 100%;
   max-width: 365px;
   background-color: #fff;
@@ -923,7 +923,7 @@ ul {
   margin: 0 auto;
 }
 
-.login-heading {
+.login-heading, .register-heading {
   color: var(--color-accent);
   margin-bottom: 4rem;
 }
