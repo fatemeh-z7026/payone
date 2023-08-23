@@ -44,9 +44,24 @@
         </div>
       </nav>
       <div id="loginModal" class="modal">
-<div class="modal-content">
+<div class="modal-content ">
   <span class="close">&times;</span>
-  <p>Some text in the Modal..</p>
+    <div class="card-login">
+      <h3 class="login-heading">Login Form</h3>
+
+      <form class="login-form" action="">
+        <label for="userName">Username:</label>
+        <input type="text" id="userName" placeholder="Username" autofocus>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="password" autofocus>
+
+        <button class="btn-login" type="submit">Login</button>
+        <div class="switch">Don't have an account?
+           <a href="#" onclick="switchCard()">Register here</a></div>
+      </div>
+      </form>
+  </div>
 </div>
       </div>
     </header>
