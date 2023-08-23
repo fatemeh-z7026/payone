@@ -928,12 +928,12 @@ ul {
   margin-bottom: 4rem;
 }
 
-.login-form {
+.loginForm, .registerForm {
   display: flex;
   flex-direction: column;
 }
 
-.btn-login {
+.btn-login, .register-btn {
   padding: 10px;
   background: var(--color-black);
   color: #fff;
