@@ -912,7 +912,8 @@ ul {
   /* height: 100vh; */
 }
 
-.cardLogin, .cardRegister {
+.cardLogin,
+.cardRegister {
   width: 100%;
   max-width: 365px;
   background-color: #fff;
@@ -923,17 +924,20 @@ ul {
   margin: 0 auto;
 }
 
-.login-heading, .register-heading {
+.login-heading,
+.register-heading {
   color: var(--color-accent);
   margin-bottom: 4rem;
 }
 
-.loginForm, .registerForm {
+.loginForm,
+.registerForm {
   display: flex;
   flex-direction: column;
 }
 
-.btn-login, .register-btn {
+.btnLogin,
+.btnRegister {
   padding: 10px;
   background: var(--color-black);
   color: #fff;
@@ -951,4 +955,41 @@ ul {
 .switch a {
   color: var(--color-accent);
   text-decoration: none;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {
+  background-color: #04aa6d;
+}
+.alert.info {
+  background-color: #2196f3;
+}
+.alert.warning {
+  background-color: #ff9800;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+.success {
+  display: none;
 }

@@ -36,13 +36,17 @@
         </div>
         <div class="nav__right">
           <ul class="nav__list">
-            <li class="nav__item"><a id="loginBtn"  href="#">Login</a></li>
+            <li class="nav__item"><a id="loginEntryBtn"  href="#">Login</a></li>
             <li class="nav__item">
               <a href="#" class="btn btn--secondary btn--small">Get Started</a>
             </li>
           </ul>
         </div>
       </nav>
+      <div class="alert success"  id="alertSuccess">
+        <span class="closebtn">&times;</span>  
+        <strong>Success!</strong> Indicates a successful or positive action.
+      </div>
       <div id="loginModal" class="modal">
 <div class="modalContent ">
   <span class="close">&times;</span>
@@ -56,7 +60,7 @@
         <label for="password">Password:</label>
         <input type="password" id="password" placeholder="password" autofocus>
 
-        <button class="btn-login" type="submit">Login</button>
+        <button class="btnLogin" type="submit" id="submit">Login</button>
         <div class="switch">Don't have an account?
            <a href="#" onclick="switchCard()">Register here</a></div>
           </form>
@@ -73,7 +77,7 @@
             <label for="new-password">New Password</label>
             <input type="password" id="new-password" placeholder="Enter your new password">
       
-            <button class="register-btn" type="submit">Register</button>
+            <button class="btnRegister" type="submit">Register</button>
           </form>
           <div class="switch">Already have an account? <a href="#" onclick="switchCard()">Login here</a></div>
         </div>
