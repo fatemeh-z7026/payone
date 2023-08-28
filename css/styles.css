@@ -192,11 +192,10 @@ a:hover {
   width: 100%;
 }
 
-.nav__left{
+.nav__left {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 .nav__center .nav__item {
   padding: 1.5rem;
@@ -1001,7 +1000,6 @@ ul {
   display: none;
 }
 
-
 /*Collapsibles*/
 
 .collapsible__header {
@@ -1030,28 +1028,22 @@ ul {
 .collapsible--expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
-} *
-.nav__toggler {
+}
+* .nav__toggler {
   transition: box-shadow 0.5s;
   cursor: pointer;
   text-align: end;
-  padding: .75rem ;
+  padding: 0.75rem;
   font-size: 3.5rem;
   border-radius: 5px;
-
 }
 .nav.collapsible--expanded .nav__toggler {
-  box-shadow: 0 0 0 3px #666;
-  border-radius: 5px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
-
-
 @media screen and (min-width: 768px) {
- 
   .nav__toggler {
     display: none;
   }
-
-  
 }
