@@ -23,26 +23,33 @@
       <div class=" container">
         <p class="date" id="date"></p>
       </div>
-      <nav class="nav">
-        <div class="nav__left">
-          <a class="nav__brand" href=""><img src="/assets/svg/logo.svg" /></a>
-        </div>
-        <div class="nav__center">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#">Home</a></li>
-            <li class="nav__item"><a href="#">Case Study</a></li>
-            <li class="nav__item"><a href="#">Services</a></li>
-          </ul>
-        </div>
-        <div class="nav__right">
-          <ul class="nav__list">
-            <li class="nav__item"><a id="loginEntryBtn"  href="#">Login</a></li>
-            <li class="nav__item">
-              <a href="#" class="btn btn--secondary btn--small">Get Started</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <nav class="nav collapsible collapsible--expanded">
+         
+          <div class="nav__left">
+            <a class="nav__brand" href=""><img src="/assets/svg/logo.svg" /></a>
+            <div class=" .nav__toggler " >
+              <i class="fa-solid fa-bars nav__toggler"></i>
+            </div>
+          </div>
+          <div class="nav__center collapsible__content">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#">Home</a></li>
+              <li class="nav__item"><a href="#">Case Study</a></li>
+              <li class="nav__item"><a href="#">Services</a></li>
+            </ul>
+          </div>
+          <div class="nav__right collapsible__content">
+            <ul class="nav__list">
+              <li class="nav__item"><a id="loginEntryBtn"  href="#">Login</a></li>
+              <li class="nav__item">
+                <a href="#" class="btn btn--secondary btn--small">Get Started</a>
+              </li>
+            </ul>
+          </div>
+        
+        </nav>
+       
+  
       <div class="alert success"  id="alertSuccess">
         <span class="closebtn">&times;</span>  
         <strong>Success!</strong> Indicates a successful or positive action.
