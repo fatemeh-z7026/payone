@@ -190,6 +190,7 @@ a:hover {
   list-style: none;
   padding-left: 0;
   width: 100%;
+  opacity: 1;
 }
 
 .nav__left {
@@ -1029,7 +1030,8 @@ ul {
   max-height: 100vh;
   opacity: 1;
 }
-* .nav__toggler {
+ .nav__toggler {
+  opacity: 0.5;
   transition: box-shadow 0.5s;
   cursor: pointer;
   text-align: end;
@@ -1045,5 +1047,10 @@ ul {
 @media screen and (min-width: 768px) {
   .nav__toggler {
     display: none;
+  }
+  .collapsible__content {
+    max-height: 100vh;
+    transition: all 0.5s;
+    opacity: 1;
   }
 }
