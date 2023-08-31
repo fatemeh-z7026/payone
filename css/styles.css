@@ -178,6 +178,37 @@ a:hover {
   font-weight: 500;
   padding: 2rem 0 1rem 1rem;
 }
+/*Collapsibles*/
+
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  font-size: 2rem;
+}
+.collapsible__chevron {
+  transform: rotate(90deg);
+  transition: transform 0.5s;
+}
+
+.collapsible__content {
+  max-height: 0;
+  /* overflow: hidden; */
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0deg);
+}
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
 
 /*Navbar*/
 
@@ -187,10 +218,9 @@ a:hover {
 
 .nav__list {
   margin: 0;
-  list-style: none;
   padding-left: 0;
   width: 100%;
-  opacity: 1;
+ 
 }
 
 .nav__left {
@@ -215,7 +245,6 @@ a:hover {
   display: none;
 }
 .nav__toggler {
-  opacity: 0.5;
   transition: box-shadow 0.5s;
   cursor: pointer;
   text-align: end;
@@ -224,6 +253,8 @@ a:hover {
   border-radius: 5px;
 }
 .nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
     rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
@@ -240,6 +271,8 @@ a:hover {
     width: auto;
     display: flex;
     font-size: 1.6rem;
+    max-height: 100%;
+    opacity: 1;
   }
 
   .nav__center .nav__item {
@@ -265,11 +298,7 @@ a:hover {
   .nav__toggler {
     display: none;
   }
-  .collapsible__content {
-    max-height: 100vh;
-    transition: all 0.5s;
-    opacity: 1;
-  }
+ 
 }
 
 
@@ -825,37 +854,7 @@ a:hover {
   border-radius: 30px;
 }
 
-/*Collapsibles*/
 
-
-.collapsible__header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.collapsible__heading {
-  margin-top: 0;
-  font-size: 2rem;
-}
-.collapsible__chevron {
-  transform: rotate(90deg);
-  transition: transform 0.5s;
-}
-
-.collapsible__content {
-  max-height: 0;
-  /* overflow: hidden; */
-  transition: all 0.5s;
-  opacity: 0;
-}
-
-.collapsible--expanded .collapsible__chevron {
-  transform: rotate(0deg);
-}
-.collapsible--expanded .collapsible__content {
-  max-height: 100vh;
-  opacity: 1;
-}
 /*Footer*/
 
 
